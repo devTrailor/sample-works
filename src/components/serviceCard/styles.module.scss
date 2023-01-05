@@ -1,0 +1,33 @@
+@import "../../styles/variables/colors";
+
+.serviceCard {
+  background-color: transparent;
+  border: 1px solid $theme-secondary;
+  border-radius: 5px;
+
+  .cardImage {
+    text-align: center;
+    font-size: 70px;
+    color: $theme-secondary;
+  }
+  .cardTitle {
+    color: $text-primary;
+  }
+
+  .desc {
+    color: rgba($text-primary, 0.4);
+  }
+
+  .tools {
+    margin-top: 20px;
+    text-align: center;
+    p {
+      color: $text-primary;
+      font-weight: 300;
+      span {
+        color: $theme-secondary;
+        margin-right: 10px;
+      }
+    }
+  }
+}

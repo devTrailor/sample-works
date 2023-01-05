@@ -1,0 +1,9 @@
+@import "../../styles/variables/colors";
+
+.logo {
+  color: $theme-secondary;
+
+  img {
+    width: 90px;
+  }
+}

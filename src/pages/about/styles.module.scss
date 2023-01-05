@@ -1,0 +1,30 @@
+@import "../../styles/variables/colors";
+
+.myInfo {
+  .desc {
+    color: rgba($text-primary, 0.5);
+  }
+
+  .skills_lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+    color: rgba($text-primary, 0.5);
+    padding: 0 15px;
+    li {
+      position: relative;
+      &::before {
+        content: "▹";
+        position: absolute;
+        top: 2px;
+        color: $theme-secondary;
+        font-size: 13px;
+        left: -15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables/colors";
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+
+  .num {
+    color: $theme-secondary;
+  }
+  .mainTitle {
+    font-size: 30px;
+    color: $text-primary;
+    position: relative;
+  }
+
+  .line {
+    height: 1px;
+    width: 300px;
+    // margin-left: 15px;
+    background-color: rgba($text-primary, 0.5);
+  }
+}

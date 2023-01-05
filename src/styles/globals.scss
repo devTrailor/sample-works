@@ -1,0 +1,51 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap");
+
+// Variables
+@import "./variables/colors";
+
+@import "~bootstrap/scss/bootstrap"; //Bootstrap-css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif !important;
+  background-color: $theme-primary !important;
+}
+
+::selection {
+  background-color: $theme-secondary;
+  color: $theme-primary;
+}
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+a {
+  text-decoration: none !important;
+  // color: black !important;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $text-primary;
+    font-size: 13px;
+  }
+}
+
+.btn {
+  color: $theme-secondary !important;
+  background-color: transparent !important;
+  border: 1px solid $theme-secondary !important;
+  border-radius: 5px !important;
+  line-height: 1 !important;
+  font-size: 13px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin-left: 15px !important;
+}

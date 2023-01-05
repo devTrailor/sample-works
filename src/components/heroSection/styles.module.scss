@@ -1,0 +1,52 @@
+@import "../../styles/variables/colors";
+
+.intro_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 90vh;
+  height: 100vh;
+  padding: 0px;
+  // max-width: 1100px;
+  margin: 0 auto;
+}
+
+.my_intro {
+  .greet {
+    margin: 0px 0px 30px 4px;
+    color: $theme-secondary;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .name {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    color: $text-primary;
+  }
+
+  .quotes {
+    margin-top: 5px;
+    font-size: clamp(40px, 8vw, 80px);
+    color: rgba($text-primary, 0.5);
+    line-height: 0.9;
+  }
+
+  .desc {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+    color: rgba($text-primary, 0.5);
+
+    line-height: 1.7;
+    .cmpName {
+      color: $theme-secondary;
+    }
+  }
+
+  .btn_contact {
+    padding: 1rem 1.6rem;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+}
