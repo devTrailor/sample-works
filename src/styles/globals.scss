@@ -17,6 +17,9 @@ body {
   background-color: $theme-primary !important;
 }
 
+::marker {
+  list-style: none !important;
+}
 ::selection {
   background-color: $theme-secondary;
   color: $theme-primary;

@@ -24,10 +24,11 @@ const Navigation = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About Me</Nav.Link>
-            <Nav.Link href="#what-i-do">What I Do</Nav.Link>
+            <Nav.Link href="#service">What I Do</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#contact" className={`${styles.btn_resume} btn`}>
+            <Nav.Link href="#resume" className={`${styles.btn_resume} btn`}>
               Resume
             </Nav.Link>
           </Nav>

@@ -1,0 +1,119 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.portfolioWrapper {
+  gap: 100px 0;
+  .projectImg_1 {
+    box-shadow: $primaryShadow;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      &::before {
+        display: none;
+        transition: all 0.5;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($theme-secondary, 1);
+      mix-blend-mode: multiply;
+      cursor: pointer;
+    }
+  }
+
+  .projectImg_2 {
+    position: relative;
+    left: -16%;
+
+    &:hover {
+      &::before {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($theme-secondary, 1);
+      mix-blend-mode: multiply;
+      cursor: pointer;
+    }
+  }
+
+  .projectDetails_1 {
+    //   background-color: red;
+    position: relative;
+    left: -20%;
+    z-index: 55;
+
+    .projectOverline {
+      color: $theme-secondary;
+    }
+
+    .projectTitle {
+      a {
+        color: $text-primary;
+      }
+    }
+    .desc {
+      box-shadow: $primaryShadow;
+      background-color: #112240;
+      color: rgba($text-primary, 0.4);
+    }
+
+    .projectTechList {
+      li {
+        color: rgba($text-primary, 0.4);
+      }
+    }
+  }
+  .projectLinks {
+    .link {
+      color: $text-primary;
+      font-size: 20px;
+      &:hover {
+        color: $theme-secondary;
+      }
+    }
+  }
+}
+
+.projectDetails_2 {
+  position: relative;
+  // left: 20%;
+  z-index: 55;
+
+  .projectOverline {
+    color: $theme-secondary;
+  }
+
+  .projectTitle {
+    a {
+      color: $text-primary;
+    }
+  }
+  .desc {
+    box-shadow: $primaryShadow;
+    background-color: #112240;
+    color: rgba($text-primary, 0.4);
+  }
+
+  .projectTechList {
+    li {
+      color: rgba($text-primary, 0.4);
+    }
+  }
+}

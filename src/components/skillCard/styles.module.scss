@@ -1,0 +1,13 @@
+@import "../../styles/variables/colors";
+
+.skillCard {
+  .skillImg {
+    color: $theme-secondary;
+    font-size: 5rem;
+  }
+
+  span {
+    color: $text-primary;
+    font-size: 20px;
+  }
+}

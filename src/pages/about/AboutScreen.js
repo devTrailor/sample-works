@@ -32,7 +32,7 @@ const AboutScreen = () => {
           </div>
         </Col>
         <Col xl={4} lg={4}>
-          <div className="myImage">
+          <div className={styles.myImage}>
             <Image src={myImage} alt="my-image" width={300} />
           </div>
         </Col>

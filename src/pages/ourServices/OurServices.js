@@ -38,10 +38,10 @@ const OurServices = () => {
           <PageHeader mainTitle={"What I Do?"} num="02" />
         </Col>
       </Row>
-      <Row className={`${styles.ourServices} justify-content-center`}>
+      <Row className={`${styles.ourServices} justify-content-center g-4`}>
         {cardData.map((curElm, i) => {
           return (
-            <Col key={i}>
+            <Col key={i} xl={4} lg={4} md={6} sm={12}>
               <ServiceCard
                 cardImg={curElm.cardImg}
                 cardTitle={curElm.cardTitle}

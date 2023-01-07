@@ -3,14 +3,43 @@
   min-height: 100vh;
 }
 
+.social {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  .list-group-item {
+    color: red !important;
+  }
+}
+
 // aboutSec
 
 .aboutSec {
-  padding: 0px 150px;
+  padding: 100px 0;
 }
 
 // servicesSec
 
 .servicesSec {
-  padding: 110px 150px;
+  padding: 100px 0;
+}
+
+// portfolioSec
+
+.portfolioSec {
+  padding: 100px 0;
+}
+
+// .skillsSec
+.skillsSec {
+  padding: 100px 0;
+}
+
+// .contactSec
+
+.contactSec {
+  padding: 100px 0;
 }

@@ -1,3 +1,12 @@
-.footer {
-  background-color: rebeccapurple;
+@import "../../styles/variables/colors";
+
+.createdBy {
+  font-size: 1rem;
+  text-align: center;
+  color: rgba($text-primary, 0.5);
+  span {
+    color: $theme-secondary;
+    font-size: 1rem;
+    font-style: italic;
+  }
 }

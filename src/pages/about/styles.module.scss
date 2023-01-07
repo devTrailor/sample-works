@@ -28,3 +28,25 @@
     }
   }
 }
+
+.myImage {
+  position: relative;
+  cursor: pointer;
+  img {
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid $theme-secondary;
+  }
+}
