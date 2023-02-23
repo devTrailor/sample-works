@@ -1,4 +1,13 @@
+@import "../../styles/variables/colors";
+
 .list {
-  background-color: red;
   list-style: none;
+  svg {
+    color: $text-primary;
+    transition: all 0.3s ease-in;
+    font-size: 20px;
+    &:hover {
+      color: $theme-secondary;
+    }
+  }
 }

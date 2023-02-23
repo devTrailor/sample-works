@@ -1,3 +1,4 @@
+@import "../styles/variables/colors";
 .main {
   position: relative;
   min-height: 100vh;
@@ -6,12 +7,20 @@
 .social {
   width: 40px;
   position: fixed;
-  bottom: 0px;
+  bottom: 130px;
   left: 40px;
   right: auto;
+  display: flex;
+  align-items: center;
   z-index: 10;
-  .list-group-item {
-    color: red !important;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    border-radius: 50%;
+    bottom: -100px;
+    background-color: $text-primary;
   }
 }
 

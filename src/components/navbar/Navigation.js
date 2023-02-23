@@ -1,12 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {
-  Container,
-  ListGroup,
-  ListGroupItem,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import Logo from "../logo/Logo";
 
 // Styles
@@ -28,7 +22,11 @@ const Navigation = () => {
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#resume" className={`${styles.btn_resume} btn`}>
+            <Nav.Link
+              href="#resume"
+              className={`${styles.btn_resume} btn`}
+              download
+            >
               Resume
             </Nav.Link>
           </Nav>
