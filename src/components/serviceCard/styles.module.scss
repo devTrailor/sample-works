@@ -4,6 +4,8 @@
   background-color: transparent;
   border: 1px solid $theme-secondary;
   border-radius: 5px;
+  height: 100%;
+  cursor: pointer;
 
   .cardImage {
     text-align: center;
@@ -16,6 +18,7 @@
 
   .desc {
     color: rgba($text-primary, 0.4);
+    text-align: center;
   }
 
   .tools {

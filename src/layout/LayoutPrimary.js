@@ -11,7 +11,7 @@ const LayoutPrimary = ({ children }) => {
         <Navigation />
       </section>
       {children}
-      <section className="footer-sec">
+      <section className="footer-sec my-4">
         <Footer />
       </section>
     </section>

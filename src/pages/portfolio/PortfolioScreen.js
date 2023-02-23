@@ -40,9 +40,9 @@ const PortfolioScreen = () => {
               </a>
             </h3>
             <p className={`${styles.desc} p-3`}>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
+              A minimal project of crypto related new tools are used to build,
+              where use can read and see the details of particular crypto news
+              by choice.
             </p>
             <ul
               className={`${styles.projectTechList} list-group flex-row justify-content-end`}
@@ -96,9 +96,9 @@ const PortfolioScreen = () => {
               </a>
             </h3>
             <p className={`${styles.desc} p-3`}>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
+              A educational study center project, where student can find their
+              teachers and their roles in teaching fields. Student can find the
+              teacher for their studies and check the teacher details.
             </p>
             <ul
               className={`${styles.projectTechList} list-group flex-row justify-content-start`}
@@ -111,7 +111,6 @@ const PortfolioScreen = () => {
                 JavaScript
               </li>
             </ul>
-
             <div
               className={`${styles.projectLinks} d-flex justify-content-start`}
             >

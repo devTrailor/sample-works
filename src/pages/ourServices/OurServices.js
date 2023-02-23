@@ -14,20 +14,21 @@ const OurServices = () => {
       cardImg: <AiOutlineHtml5 />,
       cardTitle: "Web Design",
       cardDetail:
-        "I value simple content structure, clean design patterns, and thoughtful interactions.",
+        "Specialized in creating visually stunning and user-friendly websites. I enjoy working with clients from various industries to bring their vision to life.",
       techs: "HTML 5, CSS3, Bootstrap 5",
     },
     {
       cardImg: <BsCodeSlash />,
       cardTitle: "Frontend Development",
-      cardDetail: "fhjhjhjhjjkhkjhffiuytruifjkdfhdfgs",
-      techs:
-        "HTML5, CSS3, SCSS, Bootstrap 5, JavaScript (ES6+), React.Js, Next.Js, Ant.Design",
+      cardDetail:
+        "Building responsive and interactive user interfaces using technologies such as HTML, CSS, JavaScript, React.js and Next.js etc. I'm passionate about building user-friendly and accessible websites that engage and delight users.",
+      techs: "JavaScript (ES6+), React.Js, Next.Js, Ant.Design",
     },
     {
       cardImg: <BsSoundwave />,
       cardTitle: "Web Animation",
-      cardDetail: "fhjhjhjhjjkhkjhffiuytruifjkdfhdfgs",
+      cardDetail:
+        "Specializing in creating engaging and interactive animations that bring websites to life. I'm passionate about creating unique and dynamic animations that enhance the user experience and communicate complex ideas effectively.",
       techs: "Motion Framer, GSAP etc..",
     },
   ];

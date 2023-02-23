@@ -1,5 +1,10 @@
+// Variables
+// ================================================
+@import "../../styles/variables/colors";
+// ================================================
+
 .custom_nav {
-  background-color: transparent;
+  background-color: $theme-primary;
 
   .btn_resume {
     padding: 0.75rem 1rem !important;

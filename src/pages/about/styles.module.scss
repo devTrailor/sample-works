@@ -1,5 +1,8 @@
 @import "../../styles/variables/colors";
 
+.introWrapper {
+  padding: 0 20px;
+}
 .myInfo {
   .desc {
     color: rgba($text-primary, 0.5);
@@ -30,23 +33,31 @@
 }
 
 .myImage {
-  position: relative;
   cursor: pointer;
+  position: relative;
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($theme-secondary, 1);
+    z-index: 1;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+  }
   img {
     border-radius: 5px;
     width: 100%;
     position: relative;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    border: 1px solid $theme-secondary;
   }
 }

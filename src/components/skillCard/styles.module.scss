@@ -1,6 +1,7 @@
 @import "../../styles/variables/colors";
 
 .skillCard {
+  cursor: pointer;
   .skillImg {
     color: $theme-secondary;
     font-size: 5rem;

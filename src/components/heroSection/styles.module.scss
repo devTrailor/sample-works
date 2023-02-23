@@ -39,6 +39,10 @@
     color: rgba($text-primary, 0.5);
 
     line-height: 1.7;
+
+    strong {
+      color: $theme-secondary;
+    }
     .cmpName {
       color: $theme-secondary;
     }
