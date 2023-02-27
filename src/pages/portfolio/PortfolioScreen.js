@@ -14,7 +14,7 @@ const PortfolioScreen = () => {
     <Container>
       <PageHeader num={"03"} mainTitle={"Some Things I’ve Built"} />
       <Row className={`${styles.portfolioWrapper} align-items-center`}>
-        <Col xl={6}>
+        <Col xl={6} lg={6} md={6} sm={12} xs={12}>
           <div className={styles.projectImg_1}>
             <a
               href="https://will-crypto.netlify.app/"
@@ -25,7 +25,7 @@ const PortfolioScreen = () => {
             </a>
           </div>
         </Col>
-        <Col xl={5}>
+        <Col xl={5} lg={5} md={5} sm={12} xs={12}>
           <div className={styles.projectDetails_1}>
             <p className={`${styles.projectOverline} text-end mb-0`}>
               Featured Project
@@ -81,7 +81,7 @@ const PortfolioScreen = () => {
           </div>
         </Col>
 
-        <Col xl={5}>
+        <Col xl={5} lg={5} md={5} sm={12} xs={12}>
           <div className={styles.projectDetails_2}>
             <p className={`${styles.projectOverline} text-start mb-0`}>
               Featured Project
@@ -133,7 +133,7 @@ const PortfolioScreen = () => {
             </div>
           </div>
         </Col>
-        <Col xl={6}>
+        <Col xl={6} lg={6} md={6} sm={12} xs={12}>
           <div className={styles.projectImg_2}>
             <a
               href="https://will-crypto.netlify.app/"

@@ -3,18 +3,15 @@
 
 .conctWrapper {
   margin: 50px 0;
-  .emailIcon,
-  .callIcon {
-    font-size: 3rem;
-    color: $theme-secondary;
-    padding: 20px;
-    box-shadow: $primaryShadow;
-    gap: 0 20px;
 
-    span {
-      color: $text-primary;
-      font-size: 1.5rem;
-      letter-spacing: 4px;
-    }
+  .icon {
+    color: $theme-secondary;
+    font-size: 3rem;
+    margin-right: 15px;
+  }
+  span {
+    color: $text-primary;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
   }
 }

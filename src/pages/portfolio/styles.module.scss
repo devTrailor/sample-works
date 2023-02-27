@@ -54,9 +54,8 @@
   }
 
   .projectDetails_1 {
-    //   background-color: red;
     position: relative;
-    left: -20%;
+    transform: translateX(-20%);
     z-index: 55;
 
     .projectOverline {
@@ -94,6 +93,7 @@
 .projectDetails_2 {
   position: relative;
   // left: 20%;
+  transform: translateX(20%);
   z-index: 55;
 
   .projectOverline {

@@ -1,16 +1,16 @@
-// Styles
-
-import { Col, Container, Row } from "react-bootstrap";
+import { useEffect } from "react";
+import { Container } from "react-bootstrap";
 
 // styles
 import styles from "./styles.module.scss";
 
 const HeroSection = () => {
+  useEffect(() => {}, []);
   return (
     <Container>
       <div className={styles.intro_wrapper}>
         <div className={styles.my_intro}>
-          <h1 className={styles.greet}>Hi, my name is</h1>
+          <h1 className={`${styles.greet} topToBottom`}>Hi, my name is</h1>
           <h2 className={styles.name}>Ritik Sharma</h2>
           <h3 className={styles.quotes}>I build things for the web.</h3>
           <p className={styles.desc}>
