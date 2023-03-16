@@ -13,7 +13,9 @@ const PortfolioScreen = () => {
   return (
     <Container>
       <PageHeader num={"03"} mainTitle={"Some Things I’ve Built"} />
-      <Row className={`${styles.portfolioWrapper} align-items-center`}>
+      <Row
+        className={`${styles.portfolioWrapper} align-items-center justify-content-center`}
+      >
         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
           <div className={styles.projectImg_1}>
             <a

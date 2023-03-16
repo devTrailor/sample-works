@@ -42,7 +42,7 @@ const OurServices = () => {
       <Row className={`${styles.ourServices} justify-content-center g-4`}>
         {cardData.map((curElm, i) => {
           return (
-            <Col key={i} xl={4} lg={4} md={6} sm={12}>
+            <Col key={i} xl={4} lg={6} md={6} sm={12}>
               <ServiceCard
                 cardImg={curElm.cardImg}
                 cardTitle={curElm.cardTitle}
