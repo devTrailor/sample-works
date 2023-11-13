@@ -14,7 +14,7 @@ const AboutScreen = () => {
           <PageHeader mainTitle={"About Me"} num="01" />
           <div className={styles.myInfo}>
             <p className={styles.desc}>
-              Hello, I am a frontend developer almost one year of experience
+              Hello, I am a frontend developer more than a year of experience
               creating user-friendly and responsive websites. I specialize in
               building robust and intuitive user interfaces using HTML, CSS,
               JavaScript, and React.js. Take a look at my portfolio to see some
@@ -29,6 +29,7 @@ const AboutScreen = () => {
               <li>React.Js</li>
               <li>ANT.Design</li>
               <li>Next.Js</li>
+              <li>AEM</li>
             </ul>
           </div>
         </Col>

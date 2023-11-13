@@ -15,7 +15,7 @@ const OurServices = () => {
       cardTitle: "Web Design",
       cardDetail:
         "Specialized in creating visually stunning and user-friendly websites. I enjoy working with clients from various industries to bring their vision to life.",
-      techs: "HTML 5, CSS3, Bootstrap 5",
+      techs: "HTML5, CSS3, Bootstrap5, AEM",
     },
     {
       cardImg: <BsCodeSlash />,
