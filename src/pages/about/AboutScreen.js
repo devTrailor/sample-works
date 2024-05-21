@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PageHeader from "../../components/pageHeader/PageHeader";
-import myImage from "../../assets/images/ritik's-2.jpg";
+import myImage from "../../assets/images/user.png";
 // styles
 import styles from "./styles.module.scss";
 
@@ -35,7 +35,12 @@ const AboutScreen = () => {
         </Col>
         <Col xl={4} lg={4}>
           <div className={styles.myImage}>
-            <Image src={myImage} alt="my-image" width={300} />
+            <Image
+              src={myImage}
+              alt="my-image"
+              width={"100%"}
+              height={"100%"}
+            />
           </div>
         </Col>
       </Row>

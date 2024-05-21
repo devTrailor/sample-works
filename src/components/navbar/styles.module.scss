@@ -11,15 +11,20 @@
   top: 0;
   width: 100%;
 
-  // .navbar-nav {
-  //   .nav-link {
-  //     &:hover {
-  //       color: $theme-secondary !;
-  //     }
-  //   }
+  // .nav_logo {
   // }
 
-  .btn_resume {
-    padding: 0.75rem 1rem !important;
+  .nav_links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    text-transform: capitalize;
+
+    .links {
+      a {
+        text-decoration: none;
+        color: rgba($text-primary, 1);
+      }
+    }
   }
 }

@@ -13,13 +13,6 @@
     overflow: hidden;
     position: relative;
 
-    &:hover {
-      &::before {
-        display: none;
-        transition: all 0.5;
-      }
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -31,6 +24,13 @@
       background-color: rgba($theme-secondary, 1);
       mix-blend-mode: multiply;
       cursor: pointer;
+    }
+
+    &:hover {
+      transition: all 0.5 ease-in-out;
+      &::before {
+        display: none;
+      }
     }
   }
 
@@ -85,6 +85,11 @@
     }
 
     .projectTechList {
+      display: flex;
+      max-width: 300px;
+      flex-wrap: wrap;
+      margin: 0 0 0 auto;
+
       li {
         color: rgba($text-primary, 0.4);
       }
@@ -127,6 +132,10 @@
   }
 
   .projectTechList {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+
     li {
       color: rgba($text-primary, 0.4);
     }

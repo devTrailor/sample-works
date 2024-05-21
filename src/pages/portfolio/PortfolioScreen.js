@@ -19,7 +19,7 @@ const PortfolioScreen = () => {
         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
           <div className={styles.projectImg_1}>
             <a
-              href="https://will-crypto.netlify.app/"
+              href="https://www.royalenfield.com/in/en/reown/"
               target="_blank"
               rel="noreferrer"
             >
@@ -34,45 +34,51 @@ const PortfolioScreen = () => {
             </p>
             <h3 className={`${styles.projectTitle} text-end`}>
               <a
-                href="https://will-crypto.netlify.app/"
+                href="https://www.royalenfield.com/in/en/reown/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Crypto Verse
+                Royal Enfield REOWN
               </a>
             </h3>
             <p className={`${styles.desc} p-3`}>
-              A minimal project of crypto related new tools are used to build,
-              where use can read and see the details of particular crypto news
-              by choice.
+              Royal Enfield Reown is a one-stop solution where you can buy,
+              sell, & exchange Royal Enfield motorcycles in India from the
+              comfort of your home.
             </p>
             <ul
               className={`${styles.projectTechList} list-group flex-row justify-content-end`}
             >
-              <li className="list-group-item border-0 bg-transparent">
-                React.Js
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                HTML 5
               </li>
-              <li className="list-group-item border-0 bg-transparent">
-                Redux.Js
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                CSS 3
               </li>
-              <li className="list-group-item border-0 bg-transparent">
-                Antd Design
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                SCSS
+              </li>
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                AEM
+              </li>
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                JavaScript
               </li>
             </ul>
 
             <div
-              className={`${styles.projectLinks} d-flex justify-content-end`}
+              className={`${styles.projectLinks} d-flex justify-content-end mt-2`}
             >
-              <a
+              {/* <a
                 href="https://github.com/ritik7905/crypto-verse"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.link} mx-2`}
               >
                 <FiGithub />
-              </a>
+              </a> */}
               <a
-                href="https://will-crypto.netlify.app/"
+                href="https://www.royalenfield.com/in/en/reown/"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.link} mx-2`}
@@ -90,42 +96,50 @@ const PortfolioScreen = () => {
             </p>
             <h3 className={`${styles.projectTitle} text-start`}>
               <a
-                href="https://will-crypto.netlify.app/"
+                href="https://www.royalenfield.com/in/en/tours/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Study Center
+                Royal Enfield Tours
               </a>
             </h3>
             <p className={`${styles.desc} p-3`}>
-              A educational study center project, where student can find their
-              teachers and their roles in teaching fields. Student can find the
-              teacher for their studies and check the teacher details.
+              Official site of Royal Enfield bikes in India. Explore
+              destinations around the world and book your trip with Royal
+              Enfield Tours.
             </p>
             <ul
               className={`${styles.projectTechList} list-group flex-row justify-content-start`}
             >
-              <li className="list-group-item border-0 bg-transparent">
+              <li className="list-group-item border-0 bg-transparent pb-0">
                 HTML 5
               </li>
-              <li className="list-group-item border-0 bg-transparent">CSS 3</li>
-              <li className="list-group-item border-0 bg-transparent">
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                CSS 3
+              </li>
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                SCSS
+              </li>
+              <li className="list-group-item border-0 bg-transparent pb-0">
+                AEM
+              </li>
+              <li className="list-group-item border-0 bg-transparent pb-0">
                 JavaScript
               </li>
             </ul>
             <div
-              className={`${styles.projectLinks} d-flex justify-content-start`}
+              className={`${styles.projectLinks} d-flex justify-content-start mt-2`}
             >
-              <a
+              {/* <a
                 href="https://github.com/ritik7905/study_center"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.link} mx-2`}
               >
                 <FiGithub />
-              </a>
+              </a> */}
               <a
-                href="https://study-center-kappa.vercel.app/"
+                href="https://www.royalenfield.com/in/en/tours/"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.link} mx-2`}
@@ -138,7 +152,7 @@ const PortfolioScreen = () => {
         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
           <div className={styles.projectImg_2}>
             <a
-              href="https://will-crypto.netlify.app/"
+              href="https://www.royalenfield.com/in/en/tours/"
               target="_blank"
               rel="noreferrer"
             >

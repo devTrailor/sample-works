@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import SkillCard from "../../components/skillCard/SkillCard";
+import { AiOutlineAntDesign } from "react-icons/ai";
 import {
   DiHtml5,
   DiCss3Full,
@@ -20,6 +21,7 @@ const Skills = () => {
     { icon: <DiJavascript1 />, title: "JAVASCRIPT" },
     { icon: <DiReact />, title: "REACT.JS" },
     { icon: <SiRedux />, title: "REDUX.JS" },
+    { icon: <AiOutlineAntDesign />, title: "ANTD" },
     { icon: <DiGit />, title: "GIT" },
   ];
   return (
