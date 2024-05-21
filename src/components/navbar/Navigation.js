@@ -6,31 +6,48 @@ import Logo from "../logo/Logo";
 // Styles
 import styles from "./styles.module.scss";
 const Navigation = () => {
+  const navigation = [
+    {
+      name: "Home",
+      path: "#home",
+    },
+    {
+      name: "about me",
+      path: "#about",
+    },
+    {
+      name: "what i do",
+      path: "#service",
+    },
+    {
+      name: "portfolio",
+      path: "#portfolio",
+    },
+    {
+      name: "skills",
+      path: "#skills",
+    },
+    {
+      name: "contact",
+      path: "#contact",
+    },
+  ];
   return (
     <Navbar expand="lg" className={styles.custom_nav}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Link href="#home" className={styles.nav_logo}>
           {/* Logo */}
           <Logo />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About Me</Nav.Link>
-            <Nav.Link href="#service">What I Do</Nav.Link>
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link
-              href="#resume"
-              className={`${styles.btn_resume} btn`}
-              download
-            >
-              Resume
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        </Link>
+        <ul className={styles.nav_links}>
+          {navigation.map((elm) => {
+            return (
+              <li className={styles.links} key={elm.path}>
+                <Link href={elm.path}>{elm.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
       </Container>
     </Navbar>
   );
