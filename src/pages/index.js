@@ -17,11 +17,11 @@ export default function Home() {
   const social = [
     {
       icon: <FiGithub />,
-      url: "https://github.com/ritik7905",
+      url: "https://github.com/devTrailor",
     },
     {
       icon: <FiLinkedin />,
-      url: "https://www.linkedin.com/in/ritik-sharma-a306321ab/",
+      url: "https://www.linkedin.com/in/ritik-sharma014/",
     },
   ];
   return (
