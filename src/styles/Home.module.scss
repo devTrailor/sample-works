@@ -9,14 +9,16 @@
   width: 40px;
   position: fixed;
   bottom: 130px;
-  left: 40px;
+  left: 20px;
   right: auto;
   display: flex;
   align-items: center;
   z-index: 10;
+
   @include mobile {
-    left: 15px;
+    left: 0px;
   }
+
   &::before {
     content: "";
     position: absolute;
