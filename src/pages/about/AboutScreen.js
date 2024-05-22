@@ -38,8 +38,6 @@ const AboutScreen = () => {
             <Image
               src={myImage}
               alt="my-image"
-              width={"100%"}
-              height={"100%"}
             />
           </div>
         </Col>

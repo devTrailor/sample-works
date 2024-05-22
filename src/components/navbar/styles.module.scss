@@ -14,11 +14,18 @@
   // .nav_logo {
   // }
 
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .nav_links {
     list-style: none;
     display: flex;
     gap: 32px;
     text-transform: capitalize;
+    margin-bottom: 0;
 
     .links {
       a {
@@ -26,5 +33,9 @@
         color: rgba($text-primary, 1);
       }
     }
+  }
+
+  .actionMenu {
+    display: none;
   }
 }
