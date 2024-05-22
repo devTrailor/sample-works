@@ -33,6 +33,10 @@ body {
   }
 }
 
+.bodyScroll {
+  overflow: hidden;
+}
+
 ::marker {
   list-style: none !important;
 }

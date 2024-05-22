@@ -1,11 +1,14 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import Logo from "../logo/Logo";
+import { RiMenu2Fill } from "react-icons/ri";
+import { MdClose } from "react-icons/md";
 
 // Styles
 import styles from "./styles.module.scss";
 const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false);
 
   const navigation = [
     {
@@ -34,6 +37,22 @@ const Navigation = () => {
     },
   ];
 
+  const showNav = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const closeNav = () => {
+    setShowMenu(false);
+  };
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showMenu]);
+
   return (
     <nav expand="lg" className={styles.custom_nav}>
       <Container>
@@ -42,20 +61,23 @@ const Navigation = () => {
             {/* Logo */}
             <Logo />
           </Link>
-          <ul className={styles.nav_links}>
+          <ul
+            className={`${styles.nav_links} ${showMenu ? styles.showNav : ""}`}
+          >
             {navigation.map((elm) => {
               return (
-                <li className={styles.links} key={elm.path}>
+                <li
+                  className={styles.links}
+                  key={elm.path}
+                  onClick={() => closeNav()}
+                >
                   <Link href={elm.path}>{elm.name}</Link>
                 </li>
               );
             })}
+            <MdClose className={styles.iconClose} onClick={() => closeNav()} />
           </ul>
-
-          <div className={styles.actionMenu}>
-            Icon Menu
-            Icon Close
-          </div>
+          <RiMenu2Fill className={styles.iconMenu} onClick={() => showNav()} />
         </div>
       </Container>
     </nav>

@@ -14,12 +14,12 @@ const AboutScreen = () => {
           <PageHeader mainTitle={"About Me"} num="01" />
           <div className={styles.myInfo}>
             <p className={styles.desc}>
-              Hello, I am a frontend developer more than a year of experience
-              creating user-friendly and responsive websites. I specialize in
-              building robust and intuitive user interfaces using HTML, CSS,
-              JavaScript, and React.js. Take a look at my portfolio to see some
-              of my recent projects and feel free to reach out to me if you are
-              interested in working together.
+              Hello, I am a <span>Frontend Developer</span> more than a year of
+              experience creating user-friendly and responsive websites. I
+              specialize in building robust and intuitive user interfaces using
+              HTML, CSS, JavaScript, and React.js. Take a look at my portfolio
+              to see some of my recent projects and feel free to reach out to me
+              if you are interested in working together.
             </p>
             <p className={styles.desc}>
               Here are a few technologies I have been working with recently:
@@ -35,10 +35,7 @@ const AboutScreen = () => {
         </Col>
         <Col xl={4} lg={4}>
           <div className={styles.myImage}>
-            <Image
-              src={myImage}
-              alt="my-image"
-            />
+            <Image src={myImage} alt="my-image" />
           </div>
         </Col>
       </Row>

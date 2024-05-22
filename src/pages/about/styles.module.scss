@@ -6,6 +6,10 @@
 .myInfo {
   .desc {
     color: rgba($text-primary, 0.5);
+
+    span {
+      color: rgba($theme-secondary, 1);
+    }
   }
 
   .skills_lists {
@@ -39,7 +43,7 @@
   height: 100%;
 
   img {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
   }
 }

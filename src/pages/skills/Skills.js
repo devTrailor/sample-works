@@ -12,6 +12,7 @@ import {
   DiGit,
 } from "react-icons/di";
 import { SiRedux, SiAntdesign } from "react-icons/si";
+import styles from "./styles.module.scss";
 
 const Skills = () => {
   const skillCard = [
@@ -27,15 +28,15 @@ const Skills = () => {
   return (
     <Container>
       <PageHeader num={"04"} mainTitle={"Skills & Experience"} />
-      <Row className="justify-content-between">
+      <div className={styles.skillsCon}>
         {skillCard?.map((curElm, i) => {
           return (
-            <Col key={i} xl={1} lg={1} md={3} sm={6} xs={6}>
+            <div key={i}>
               <SkillCard skillIcon={curElm.icon} skillTitle={curElm.title} />
-            </Col>
+            </div>
           );
         })}
-      </Row>
+      </div>
     </Container>
   );
 };
