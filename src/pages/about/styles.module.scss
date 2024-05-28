@@ -1,7 +1,12 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 
 .introWrapper {
   padding: 0 20px;
+
+  @include mobile {
+    padding: 0 12px;
+  }
 }
 .myInfo {
   .desc {

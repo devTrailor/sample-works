@@ -10,7 +10,7 @@ const AboutScreen = () => {
   return (
     <Container>
       <Row className={`${styles.introWrapper} justify-content-between g-4`}>
-        <Col xl={6} lg={6}>
+        <Col xl={6} lg={6} className="p-0">
           <PageHeader mainTitle={"About Me"} num="01" />
           <div className={styles.myInfo}>
             <p className={styles.desc}>
@@ -33,7 +33,7 @@ const AboutScreen = () => {
             </ul>
           </div>
         </Col>
-        <Col xl={4} lg={4}>
+        <Col xl={4} lg={4} className="p-0">
           <div className={styles.myImage}>
             <Image src={myImage} alt="my-image" />
           </div>
