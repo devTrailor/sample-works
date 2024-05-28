@@ -90,6 +90,10 @@
       flex-wrap: wrap;
       margin: 0 0 0 auto;
 
+      @include mobile {
+        max-width: 100%;
+      }
+
       li {
         color: rgba($text-primary, 0.4);
       }
@@ -135,6 +139,10 @@
     display: flex;
     max-width: 300px;
     flex-wrap: wrap;
+
+    @include mobile {
+      max-width: 100%;
+    }
 
     li {
       color: rgba($text-primary, 0.4);

@@ -16,7 +16,7 @@
   z-index: 10;
 
   @include mobile {
-    left: 0px;
+    display: none;
   }
 
   &::before {

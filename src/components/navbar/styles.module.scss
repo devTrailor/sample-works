@@ -28,10 +28,6 @@
     margin-bottom: 0;
 
     @include mobile {
-      transform: translateY(-1000%);
-    }
-
-    &.showNav {
       position: absolute;
       flex-direction: column;
       width: 100%;
@@ -46,12 +42,23 @@
       padding: 0;
       justify-content: center;
       align-items: center;
+      transform: translateX(100%);
+      gap: 52px;
+    }
+
+    &.showNav {
+      transform: translateX(0%);
     }
 
     .links {
       a {
         text-decoration: none;
         color: rgba($text-primary, 1);
+        font-size: 1rem;
+
+        @include mobile {
+          font-size: 1.5rem;
+        }
       }
     }
   }

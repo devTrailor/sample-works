@@ -7,7 +7,7 @@ const Footer = () => {
       <Row>
         <Col xl={12}>
           <div className={styles.createdBy}>
-            &copy; Copyright - 2023, <span>Ritik Sharma</span>
+            &copy; Copyright - 2024, <span>Ritik Sharma</span>
           </div>
         </Col>
       </Row>

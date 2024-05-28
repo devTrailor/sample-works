@@ -71,7 +71,9 @@ const Navigation = () => {
                   key={elm.path}
                   onClick={() => closeNav()}
                 >
-                  <Link href={elm.path}>{elm.name}</Link>
+                  <Link href={elm.path} scroll={false}>
+                    {elm.name}
+                  </Link>
                 </li>
               );
             })}

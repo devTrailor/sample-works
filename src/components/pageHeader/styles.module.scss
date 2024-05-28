@@ -5,8 +5,11 @@
   display: flex;
   align-items: center;
   gap: 0 15px;
+  margin-bottom: 60px;
+
   @include mobile {
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .num {
@@ -16,6 +19,10 @@
     font-size: 30px;
     color: $text-primary;
     position: relative;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   .line {
