@@ -42,7 +42,7 @@ export default function Home() {
           })}
         </div>
         {/* Hero-section-start */}
-        <section className={styles.heroSec}>
+        <section className={styles.heroSec} id="home">
           <HeroSection />
         </section>
         {/* Hero-Section-End */}

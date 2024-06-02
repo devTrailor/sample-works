@@ -27,8 +27,10 @@ const AboutScreen = () => {
             <ul className={styles.skills_lists}>
               <li>JavaScript (ES6+)</li>
               <li>React.Js</li>
-              <li>ANT.Design</li>
               <li>Next.Js</li>
+              <li>Bootstrap 5</li>
+              <li>Tailwind CSS</li>
+              <li>ANT.Design</li>
               <li>AEM</li>
             </ul>
           </div>

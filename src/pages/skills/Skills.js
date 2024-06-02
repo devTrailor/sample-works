@@ -11,7 +11,7 @@ import {
   DiReact,
   DiGit,
 } from "react-icons/di";
-import { SiRedux, SiAntdesign } from "react-icons/si";
+import { SiRedux, SiTailwindcss, SiBootstrap } from "react-icons/si";
 import styles from "./styles.module.scss";
 
 const Skills = () => {
@@ -19,6 +19,8 @@ const Skills = () => {
     { icon: <DiHtml5 />, title: "HTML 5" },
     { icon: <DiCss3Full />, title: "CSS 3" },
     { icon: <DiSass />, title: "SASS" },
+    { icon: <SiBootstrap />, title: "Bootstrap 5" },
+    { icon: <SiTailwindcss />, title: "Tailwind CSS" },
     { icon: <DiJavascript1 />, title: "JAVASCRIPT" },
     { icon: <DiReact />, title: "REACT.JS" },
     { icon: <SiRedux />, title: "REDUX.JS" },
