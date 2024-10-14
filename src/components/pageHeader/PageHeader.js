@@ -1,29 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 // styles
 import styles from "./styles.module.scss";
 const PageHeader = (props) => {
   const { mainTitle, num } = props;
 
-  const pageHeaderVariants = {
-    hidden: {
-      opacity: 0,
-      x: '-100%'
-    },
-    visible: {
-      opacity: [0.5, 1],
-      x: 0,
-    }
-  };
-
   return (
     <motion.div
       className={`${styles.pageHeader}`}
-      variants={pageHeaderVariants}
+      variants={fadeIn('up', 0.1)}
       initial="hidden"
-      animate="visible"
-      transition={{ duration: 1.5, ease: 'backInOut' }}
+      whileInView="visible"
+      viewport={{ once: true }}
     >
       <span className={styles.num}>{num}</span>
       <h2 className={styles.mainTitle}>{mainTitle}</h2>

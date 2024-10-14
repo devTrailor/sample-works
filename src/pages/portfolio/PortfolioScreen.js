@@ -4,12 +4,14 @@ import PageHeader from "../../components/pageHeader/PageHeader";
 import Image from "next/image";
 import project_1 from "../../assets/images/project-1.png";
 import project_2 from "../../assets/images/project-2.png";
+import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 // styles
 import styles from "./styles.module.scss";
 
 const PortfolioScreen = () => {
+
   return (
     <Container>
       <PageHeader num={"03"} mainTitle={"Some Things I’ve Built"} />
@@ -17,7 +19,9 @@ const PortfolioScreen = () => {
         className={`${styles.portfolioWrapper} align-items-center justify-content-center`}
       >
         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-          <div className={styles.projectImg_1}>
+          <motion.div
+            className={styles.projectImg_1}
+          >
             <a
               href="https://www.royalenfield.com/in/en/reown/"
               target="_blank"
@@ -25,10 +29,12 @@ const PortfolioScreen = () => {
             >
               <Image src={project_1} alt="project-1" className="img-fluid" />
             </a>
-          </div>
+          </motion.div>
         </Col>
         <Col xl={5} lg={5} md={5} sm={12} xs={12}>
-          <div className={styles.projectDetails_1}>
+          <motion.div
+            className={styles.projectDetails_1}
+          >
             <p className={`${styles.projectOverline} text-end mb-0`}>
               Featured Project
             </p>
@@ -86,7 +92,7 @@ const PortfolioScreen = () => {
                 <FiExternalLink />
               </a>
             </div>
-          </div>
+          </motion.div>
         </Col>
 
         <Col xl={5} lg={5} md={5} sm={12} xs={12}>
