@@ -1,30 +1,64 @@
-import { useEffect } from "react";
 import { Container } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 // styles
 import styles from "./styles.module.scss";
 
 const HeroSection = () => {
-  useEffect(() => {}, []);
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5, // Controls the delay between each child's animation
+      },
+    },
+  };
+
+  const childVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <Container>
       <div className={styles.intro_wrapper}>
-        <div className={styles.my_intro}>
-          <h1 className={`${styles.greet} topToBottom`}>Hi, my name is</h1>
-          <h2 className={styles.name}>Ritik Sharma</h2>
-          <h3 className={styles.quotes}>I build things for the web.</h3>
-          <p className={styles.desc}>
+        <motion.div
+          className={styles.my_intro}
+          variants={containerVariants} // Parent animation control
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.h1
+            className={`${styles.greet} topToBottom`}
+            variants={childVariant}
+          >
+            Hi, my name is
+          </motion.h1>
+          <motion.h2 className={styles.name} variants={childVariant}>
+            Ritik Sharma
+          </motion.h2>
+          <motion.h3 className={styles.quotes} variants={childVariant}>
+            I build things for the web.
+          </motion.h3>
+          <motion.p className={styles.desc} variants={childVariant}>
             I am a Frontend engineer. I work in tech as a
             <strong> UI Developer</strong>. My responsibilities to build
             re-usable UI components and pixel-perfect design. I collaborate with
             my team. Excited to be part of this innovative industry and
             contribute to our company&apos;s success.
             <span className={styles.cmpName}> TechChefz.</span>
-          </p>
-          <a href="#contact" className={`${styles.btn_contact} btn`}>
+          </motion.p>
+          <motion.a
+            href="#contact"
+            className={`${styles.btn_contact} btn`}
+            variants={childVariant}
+          >
             Reach Me
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
     </Container>
   );
