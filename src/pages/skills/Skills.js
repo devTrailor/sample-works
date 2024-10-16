@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import SkillCard from "../../components/skillCard/SkillCard";
 import { AiOutlineAntDesign } from "react-icons/ai";
+import { delay, motion } from "framer-motion";
 import {
   DiHtml5,
   DiCss3Full,
@@ -27,18 +28,42 @@ const Skills = () => {
     { icon: <AiOutlineAntDesign />, title: "ANTD" },
     { icon: <DiGit />, title: "GIT" },
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 80, damping: 40 },
+    },
+  };
   return (
     <Container>
       <PageHeader num={"04"} mainTitle={"Skills & Experience"} />
-      <div className={styles.skillsCon}>
+      <motion.div
+        className={styles.skillsCon}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView={"show"}
+      >
         {skillCard?.map((curElm, i) => {
           return (
-            <div key={i}>
+            <motion.div key={i} variants={childVariants}>
               <SkillCard skillIcon={curElm.icon} skillTitle={curElm.title} />
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </Container>
   );
 };

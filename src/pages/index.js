@@ -6,6 +6,7 @@ import AboutScreen from "./about/AboutScreen";
 import OurServices from "./ourServices/OurServices";
 import PortfolioScreen from "./portfolio/PortfolioScreen";
 import SocialConnects from "../components/socialConnects";
+import { delay, motion } from "framer-motion";
 
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Skills from "./skills/Skills";
@@ -24,6 +25,24 @@ export default function Home() {
       url: "https://www.linkedin.com/in/ritik-sharma014/",
     },
   ];
+
+  const socialVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    show: {
+      opacity: [0.2, 0, 0.2, 1],
+      y: 0,
+      transition: {
+        delay: 0.3,
+        duration: 0.5,
+        type: "spring",
+        stiffness: 80,
+        damping: 40,
+      },
+    },
+  };
   return (
     <>
       <Head>
@@ -34,13 +53,18 @@ export default function Home() {
       </Head>
       <section className={styles.main}>
         {/* social-connects */}
-        <div className={`${styles.social} list-group`}>
+        <motion.div
+          className={`${styles.social} list-group`}
+          variants={socialVariants}
+          initial="hidden"
+          animate='show'
+        >
           {social.map((curElm, i) => {
             return (
               <SocialConnects icon={curElm.icon} key={i} url={curElm.url} />
             );
           })}
-        </div>
+        </motion.div>
         {/* Hero-section-start */}
         <section className={styles.heroSec} id="home">
           <HeroSection />
