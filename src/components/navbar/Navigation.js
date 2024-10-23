@@ -47,9 +47,9 @@ const Navigation = () => {
 
   useEffect(() => {
     if (showMenu) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add('prevent-bodyScroll')
     } else {
-      document.body.style.overflow = "unset";
+      document.body.classList.remove('prevent-bodyScroll')
     }
   }, [showMenu]);
 
